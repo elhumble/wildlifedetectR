@@ -1,21 +1,9 @@
-# Microsatellite individualisation
-# Need to add param for LRT or RMP as in shiny
-
 # options(digits=10)
 # library(dplyr)
 # library(data.table)
 # library(readxl)
 # library(purrr)
 
-#path <- "data/badger_case_1.xlsx"
-#path <- "data/badger_case_1_genalex.xlsx"
-
-# db <- path %>%
-#   excel_sheets() %>%
-#   set_names() %>%
-#   purrr::map(read_excel, path = path)
-
-#unknown <- read_excel("data/badger_unknown_case_1.xlsx")
 
 #' Individualisation Function
 #'
@@ -33,6 +21,8 @@
 #' @author Emily Humble
 #'         Kyle Ewart
 #'
+#' @importFrom magrittr %>%
+#' @importFrom tidyr drop_na
 #' @examples
 #'
 #' # load data

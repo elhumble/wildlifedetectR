@@ -1,6 +1,5 @@
 # Microsatellite individualisation
 # Need to add param for LRT or RMP as in shiny
-# Emily
 
 # options(digits=10)
 # library(dplyr)

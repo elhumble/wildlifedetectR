@@ -23,7 +23,7 @@ knitr::opts_chunk$set(
 `wildlifedetectR` provides a collection of functions for running typical wildlife forensic tests. This package is in development.
 
 
-* get the latest development version from github with
+* Test:
 
 ```R
     # install.packages("devtools")

@@ -5,13 +5,15 @@ wildlifedetectR
 `wildlifedetectR` provides a collection of functions for running typical
 wildlife forensic tests. This package is in development.
 
--   get the latest development version from github with
+-   Test:
 
 ``` r
     # install.packages("devtools")
     # building vignettes might take some time. Set build_vignettes = FALSE for a quick download.
     devtools::install_github("elhumble/wildlifedetectR", build_vignettes = TRUE)
+    
     # Individualisation tutorial
+    library(wildlifedetectR)
     data(BadgerRefPop)
     data(BadgerTrace)
     individualisation(db = BadgerRefPop,

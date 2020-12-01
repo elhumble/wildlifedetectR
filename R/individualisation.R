@@ -7,7 +7,6 @@
 # library(readxl)
 # library(purrr)
 
-
 #path <- "data/badger_case_1.xlsx"
 #path <- "data/badger_case_1_genalex.xlsx"
 
@@ -61,7 +60,13 @@ individualisation <- function(db = db,
 
     # Genalex:
 
-    db <- db[[2]] %>%
+  # TO DO: work on database loading
+
+  # db <- db[[2]] %>%
+   #   .[-c(1:10,12),-1]
+   # loci <- c("size", db[1,c(2:ncol(db))])
+
+    db <- db %>%
       .[-c(1:10,12),-1]
     loci <- c("size", db[1,c(2:ncol(db))])
 

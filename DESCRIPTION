@@ -8,9 +8,13 @@ Authors@R:
            email = "emily.humble@example.com",
            comment = c(ORCID = "0000-0001-6841-1269"))
 Description: R package for running key wildlife forensic and population genetic analyses
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1.9000
+Imports: 
+    dplyr,
+    tidyr
+Depends: 
+    R (>= 2.10)

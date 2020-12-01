@@ -23,6 +23,9 @@
 #'
 #' @importFrom magrittr %>%
 #' @importFrom tidyr drop_na
+#' @importFrom tidyr gather
+#' @import dplyr
+#' @import tidyr
 #' @examples
 #'
 #' # load data
@@ -63,8 +66,8 @@ individualisation <- function(db = db,
     db <- db %>%
       .[-1,] %>%
       `colnames<-`(unlist(loci)) %>%
-      gather(locus, freq, -size) %>%
-      drop_na() %>%
+      tidyr::gather(locus, freq, -size) %>% # need to swith to pivot_longer
+      tidyr::drop_na() %>%
       mutate(freq = as.numeric(freq),
              size = as.numeric(size))
 
